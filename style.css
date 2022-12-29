@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+:root {
+    /* Colors */
+    --white: #ffffff;
+    --light-gray: #d6e2f0;
+    --grayish-blue: #7b879d;
+    --dark-blue: #1f3251
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+    font-family: 'Outfit';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--light-gray);
+}
+
+img {
+    max-inline-size: 100%;
+    max-block-size: 100%;
+    border-radius: 1rem;
+}
+
+.container {
+    max-width: 18.75em;
+    background-color: var(--white);
+    padding: 1rem;
+    padding-bottom: 2rem;
+    border-radius: 1rem;
+    margin: 1rem;
+    box-shadow: 3px 2px 40px 0px rgba(0, 0, 0, 0.22);
+    -webkit-box-shadow: 3px 2px 40px 0px rgba(0, 0, 0, 0.22);
+    -moz-box-shadow: 3px 2px 40px 0px rgba(0, 0, 0, 0.22);
+}
+
+.heading {
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 1rem .75rem .85rem .75rem;
+    color: var(--dark-blue);
+}
+
+.text {
+    font-size: 0.9375rem;
+    color: var(--grayish-blue);
+    text-align: center;
+    margin: 0 .5rem;
+}
+
+.attribution {
+    position: absolute;
+    font-size: 0.6875rem;
+    text-align: center;
+    bottom: 1rem;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
